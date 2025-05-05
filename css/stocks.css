@@ -1,0 +1,166 @@
+.stock-lookup {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#ticker-input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.time-range {
+    display: flex;
+    gap: 10px;
+}
+
+.time-button {
+    padding: 8px 15px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-button.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.time-button:hover {
+    background-color: #d0d0d0;
+}
+
+.time-button.selected:hover {
+    background-color: #3E8E41;
+}
+
+.lookup-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #999;
+    transition: all 0.2s;
+}
+
+.lookup-button:hover {
+    background-color: #3E8E41;
+}
+
+.lookup-button:active {
+    background-color: #3E8E41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+.chart-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-stocks {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#reddit-stocks {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#reddit-stocks th,
+#reddit-stocks td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#reddit-stocks th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#reddit-stocks tr:hover {
+    background-color: #e6e6e6;
+}
+
+.ticker-link {
+    color: #1A73E8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ticker-link:hover {
+    text-decoration: underline;
+}
+
+.sentiment-icon {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.bullish {
+    color: green;
+}
+
+.bearish {
+    color: red;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.loading::after {
+    content: "Loading...";
+    display: inline-block;
+    animation: dotty steps(1, end) 1s infinite;
+}
+
+@keyframes dotty {
+    0% { content: "Loading. "; }
+    25% { content: "Loading.. "; }
+    50% { content: "Loading... "; }
+    75% { content: "Loading.. "; }
+    100% { content: "Loading. "; }
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+}
