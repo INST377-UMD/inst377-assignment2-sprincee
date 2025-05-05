@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Page</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/dogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.1/simpleslider.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <h1>Dogs Information</h1>
+        
+        <div class="carousel-container">
+            <h2>Random Dog Pictures</h2>
+            <div id="dog-carousel" class="simple-slider">
+                <div class="slider-wrapper">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="breeds-container">
+            <h2>Dog Breeds</h2>
+            <div id="breeds-buttons">
+                
+            </div>
+        </div>
+        
+        <div id="breed-info" class="breed-info-container" style="display: none;">
+            <h2 id="breed-name">Breed Name</h2>
+            <div class="breed-details">
+                <p id="breed-description">Description will appear here.</p>
+                <div class="breed-lifespan">
+                    <p>Lifespan: <span id="min-life">0</span> to <span id="max-life">0</span> years</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="audio-instructions">
+        <h3>Voice Commands Instructions</h3>
+        <p>You can use the following voice commands on this page:</p>
+        <ul>
+            <li><strong>Hello</strong> - Shows an alert with "Hello World"</li>
+            <li><strong>Change the color to [color]</strong> - Changes the background color of the page</li>
+            <li><strong>Navigate to [page]</strong> - Navigates to Home, Stocks, or Dogs page</li>
+            <li><strong>Load Dog Breed [breed name]</strong> - Displays information about the specified dog breed</li>
+        </ul>
+        <div class="audio-buttons">
+            <button id="turnOnAudio" class="audio-button">Turn On Audio</button>
+            <button id="turnOffAudio" class="audio-button">Turn Off Audio</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.1/simpleslider.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/dogs.js"></script>
+</body>
+</html>

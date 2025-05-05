@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Welcome to our Website!</h1>
+        <div id="quote-container" class="quote-container">
+            <p id="quote">Loading quote. . .</p>
+            <p id="author"></p>
+        </div>
+
+        <div class="button-container">
+            <a href="stocks.html" class="custom-button">Stocks</a>
+            <a href="dogs.html" class="custom-button">Dogs</a>
+        </div>
+    </div>
+
+    <div class="audio-instructions">
+        <h3>Voice Commands Instructions</h3>
+        <p>You can use the following voice commands on this page:</p>
+        <ul>
+            <li><strong>Hello</strong> - Shows an alert with "Hello World!</li>
+            <li><strong>Change the color to [color]</strong> - Changes the background color of the page</li>
+            <li><strong>Navigate to [page]</strong> - Navigates to Home, Stocks, or Dogs page</li>
+        </ul>
+        <div class="audio-buttons">
+            <button id="turnOnAudio" class="audio-button">Turn on Audio</button>
+            <button id="turnOffAudio" class="audio-button">Turn off Audio</button>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
